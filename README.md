@@ -16,3 +16,5 @@ Host someinternalhost
 3. Configuration of bastion and someinternalhost:
 bastion_IP = 51.250.75.175
 someinternalhost_IP = 10.128.0.20
+
+VPN does work
