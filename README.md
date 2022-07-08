@@ -17,4 +17,15 @@ Host someinternalhost
 bastion_IP = 51.250.75.175
 someinternalhost_IP = 10.128.0.20
 
-VPN does work
+
+Fourth homework:
+
+There's config.yaml for cloud instance configuration.
+
+Below is the command for the instance creation and aplllications start:
+
+$ ./startup.sh
+
+testapp_IP = 51.250.8.189
+testapp_port = 9292
+
