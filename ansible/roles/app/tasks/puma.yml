@@ -9,12 +9,9 @@
 
 - name: Add unit file for Puma
   template:
-  #copy:
     src: puma.service.j2
-    #src: puma.service
     dest: /etc/systemd/system/puma.service
   notify: reload puma
 
 - name: enable puma
   systemd: name=puma enabled=yes
-  

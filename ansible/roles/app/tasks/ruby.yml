@@ -20,4 +20,3 @@
   apt:
     autoremove: yes
   tags: ruby
-  
