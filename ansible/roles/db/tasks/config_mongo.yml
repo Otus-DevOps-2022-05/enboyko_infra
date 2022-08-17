@@ -1,0 +1,7 @@
+---
+- name: Change mongodb config file
+  template:
+    src: templates/mongodb.conf.j2 #Возможно, здесь в путь нужно добавить, как в методичке: templates/
+    dest: /etc/mongodb.conf
+    mode: 0644
+  notify: restart mongodb

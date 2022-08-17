@@ -1,0 +1,22 @@
+---
+# Install git and ruby
+- name: Install git, ruby, rubygems and required packages
+  apt: "name={{ item }} state=present"
+  with_items:
+    - git
+    - ruby-full
+    - ruby-bundler
+    - build-essential
+  retries: 5
+  delay: 20
+  tags: ruby
+
+- name: Remove useless packages from the cache
+  apt:
+    autoclean: yes
+  tags: ruby
+
+- name: Remove dependencies that are no longer required
+  apt:
+    autoremove: yes
+  tags: ruby
